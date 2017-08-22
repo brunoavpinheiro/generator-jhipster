@@ -21,7 +21,7 @@
         "<%= entityTranslationKey %>" : {
             "home": {
                 "title": "<%= entityClassPluralHumanized %>",
-                "createLabel": "Criar novo <%= entityClassHumanized %>",
+                "createLabel": "Criar <%= entityClassHumanized %>",
                 "createOrEditLabel": "Criar ou editar <%= entityClassHumanized %>"<% if (searchEngine === 'elasticsearch') { %>,
                 "search": "Pesquisar por <%= entityClassHumanized %>"<% } %>
             },<% if (!microserviceAppName) { %>

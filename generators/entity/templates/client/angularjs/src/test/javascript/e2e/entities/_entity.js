@@ -58,7 +58,7 @@ describe('<%= entityClass %> e2e test', function () {
                 expect(value).toMatch(/<%= angularAppName %>.<%= entityTranslationKey %>.home.createOrEditLabel/);
             });
             <%_ } else { _%>
-            expect(element(by.css('h4.modal-title')).getText()).toMatch(/Create or edit a <%= entityClassHumanized %>/);
+            expect(element(by.css('h4.modal-title')).getText()).toMatch(/Criar ou editar <%= entityClassHumanized %>/);
             <%_ } _%>
             element(by.css('button.close')).click();
         });

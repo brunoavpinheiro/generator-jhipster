@@ -63,7 +63,7 @@ describe('<%= entityClass %> e2e test', () => {
             <%_ if (enableTranslation) { _%>
             const expectVal = /<%= angularAppName %>.<%= entityTranslationKey %>.home.createOrEditLabel/;
             <%_ } else { _%>
-            const expectVal = /Create or edit a <%= entityClassHumanized %>/;
+            const expectVal = /Criar ou editar <%= entityClassHumanized %>/;
             <%_ } _%>
             element.all(by.css('h4.modal-title')).first().<%- elementGetter %>.then((value) => {
                 expect(value).toMatch(expectVal);
