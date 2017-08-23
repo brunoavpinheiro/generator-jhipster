@@ -120,7 +120,7 @@ _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('required') !== -1) { _%>
                 <small class="form-text text-danger"
                    [hidden]="!editForm.controls.<%= fieldName %>?.errors?.required" jhiTranslate="entity.validation.required">
-                   This field is required.
+                   Este campo é obrigatório.
                 </small>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('minlength') !== -1) { _%>
