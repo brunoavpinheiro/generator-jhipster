@@ -132,16 +132,16 @@
             "title": "削除の確認"
         },
         "validation": {
-            "required": "This field is required.",
-            "minlength": "This field is required to be at least {{min}} characters.",
-            "maxlength": "This field cannot be longer than {{max}} characters.",
+            "required": "Este campo é obrigatório.",
+            "minlength": "This field is required to be at least {{min}} caracteres.",
+            "maxlength": "Este campo deve ter no máximo {{max}} caracteres.",
             "min": "This field should be more than {{min}}.",
             "max": "This field cannot be more than {{max}}.",
             "minbytes": "This field should be more than {{min}} bytes.",
             "maxbytes": "This field cannot be more than {{max}} bytes.",
             "pattern": "This field should follow pattern {{pattern}}.",
-            "number": "This field should be a number.",
-            "datetimelocal": "This field should be a date and time."
+            "number": "Este campo deve conter um número.",
+            "datetimelocal": "Este campo deve conter uma data e hora."
         }
     },
     "error": {

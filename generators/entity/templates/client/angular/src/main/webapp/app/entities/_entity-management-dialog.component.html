@@ -126,13 +126,13 @@ _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('minlength') !== -1) { _%>
                 <small class="form-text text-danger"
                    [hidden]="!editForm.controls.<%= fieldName %>?.errors?.minlength" jhiTranslate="entity.validation.minlength" translateValues="{ min: <%= fields[idx].fieldValidateRulesMinlength %> }">
-                   This field is required to be at least <%= fields[idx].fieldValidateRulesMinlength %> characters.
+                   This field is required to be at least <%= fields[idx].fieldValidateRulesMinlength %> caracteres.
                 </small>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('maxlength') !== -1) { _%>
                 <small class="form-text text-danger"
                    [hidden]="!editForm.controls.<%= fieldName %>?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: <%= fields[idx].fieldValidateRulesMaxlength %> }">
-                   This field cannot be longer than <%= fields[idx].fieldValidateRulesMaxlength %> characters.
+                   Este campo deve ter no máximo <%= fields[idx].fieldValidateRulesMaxlength %> caracteres.
                 </small>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('min') !== -1) { _%>
@@ -168,13 +168,13 @@ _%>
                 <%_ if (['Integer', 'Long', 'Float', 'Double', 'BigDecimal'].includes(fieldType)) { _%>
                 <small class="form-text text-danger"
                     [hidden]="!editForm.controls.<%= fieldName %>?.errors?.number" jhiTranslate="entity.validation.number">
-                    This field should be a number.
+                    Este campo deve conter um número.
                 </small>
                 <%_ } _%>
                 <%_ if (['Instant', 'ZonedDateTime'].includes(fieldType)) { _%>
                 <small class="form-text text-danger"
                     [hidden]="!editForm.controls.<%= fieldName %>?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
-                    This field should be a date and time.
+                    Este campo deve conter uma data e hora.
                 </small>
                 <%_ } _%>
             </div>
@@ -247,7 +247,7 @@ _%>
             <%_ if (relationshipRequired) { _%>
             <small class="form-text text-danger"
                 [hidden]="!editForm.controls.<%= relationshipName %>?.errors?.required" jhiTranslate="entity.validation.required">
-                This field is required.
+                Este campo é obrigatório.
             </small>
             <%_ } _%>
         </div>

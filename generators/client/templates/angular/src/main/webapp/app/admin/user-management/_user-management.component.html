@@ -97,9 +97,6 @@
     <%_ if (databaseType !== 'cassandra') { _%>
     <div *ngIf="users">
         <div class="row justify-content-center">
-            <jhi-item-count [page]="page" [total]="queryCount" [itemsPerPage]="itemsPerPage"></jhi-item-count>
-        </div>
-        <div class="row justify-content-center">
             <ngb-pagination [collectionSize]="totalItems" [(page)]="page" (pageChange)="loadPage(page)"></ngb-pagination>
         </div>
     </div>

@@ -25,8 +25,7 @@
     </div>
     <div class="modal-body">
         <<%=jhiPrefix%>-alert-error></<%=jhiPrefix%>-alert-error>
-        <p jhiTranslate="<%= keyPrefix %>.delete.question" translateValues="{id: '{{<%= entityInstance %>.id}}'}">Deseja realmente remover
-Deseja realmente remover <%= entityClassHumanized %>?</p>
+        <p jhiTranslate="<%= keyPrefix %>.delete.question" translateValues="{id: '{{<%= entityInstance %>.id}}'}">Deseja realmente remover este registro?</p>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">

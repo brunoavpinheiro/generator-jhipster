@@ -126,19 +126,19 @@ const ngValidators = './ng_validators';
                 <%_ if (fields[idx].fieldValidateRules.indexOf('required') !== -1) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.required" data-translate="entity.validation.required">
-                    This field is required.
+                    Este campo é obrigatório.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('minlength') !== -1) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.minlength" data-translate="entity.validation.minlength" translate-value-min="<%= fields[idx].fieldValidateRulesMinlength %>">
-                    This field is required to be at least <%= fields[idx].fieldValidateRulesMinlength %> characters.
+                    This field is required to be at least <%= fields[idx].fieldValidateRulesMinlength %> caracteres.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('maxlength') !== -1) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.maxlength" data-translate="entity.validation.maxlength" translate-value-max="<%= fields[idx].fieldValidateRulesMaxlength %>">
-                    This field cannot be longer than <%= fields[idx].fieldValidateRulesMaxlength %> characters.
+                    Este campo deve ter no máximo <%= fields[idx].fieldValidateRulesMaxlength %> caracteres.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('min') !== -1) { _%>
@@ -174,13 +174,13 @@ const ngValidators = './ng_validators';
                 <%_ if (fieldType === 'Integer' || fieldType === 'Long' || fieldType === 'Float' || fieldType === 'Double' || fieldType === 'BigDecimal') { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.number" data-translate="entity.validation.number">
-                    This field should be a number.
+                    Este campo deve conter um número.
                 </p>
                 <%_ } _%>
                 <%_ if (['Instant', 'ZonedDateTime'].includes(fieldType)) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.ZonedDateTimelocal" data-translate="entity.validation.ZonedDateTimelocal">
-                    This field should be a date and time.
+                    Este campo deve conter uma data e hora.
                 </p>
                 <%_ } _%>
             </div>
@@ -246,7 +246,7 @@ const ngValidators = './ng_validators';
                 <%_ if (relationshipRequired) { _%>
             <p class="help-block"
                 ng-show="editForm.<%= relationshipName %>.$error.required" data-translate="entity.validation.required">
-                This field is required.
+                Este campo é obrigatório.
             </p>
                 <%_ } _%>
         </div>
