@@ -129,7 +129,7 @@
             "value": "Value"
         },
         "delete": {
-            "title": "Confirm delete operation"
+            "title": "Confirmação"
         },
         "validation": {
             "required": "Este campo é obrigatório.",
