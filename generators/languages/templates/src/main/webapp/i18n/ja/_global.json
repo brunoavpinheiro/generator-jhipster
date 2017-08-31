@@ -136,9 +136,9 @@
             "minlength": "This field is required to be at least {{min}} caracteres.",
             "maxlength": "Este campo deve ter no máximo {{max}} caracteres.",
             "min": "This field should be more than {{min}}.",
-            "max": "This field cannot be more than {{max}}.",
+            "max": "Este campo deve ser no máximo {{max}}.",
             "minbytes": "This field should be more than {{min}} bytes.",
-            "maxbytes": "This field cannot be more than {{max}} bytes.",
+            "maxbytes": "Este campo deve ser no máximo {{max}} bytes.",
             "pattern": "This field should follow pattern {{pattern}}.",
             "number": "Este campo deve conter um número.",
             "datetimelocal": "Este campo deve conter uma data e hora."
