@@ -138,7 +138,7 @@
             "min": "Dette felt skal være større end {{min}}.",
             "max": "Dette felt kan ikke være større end {{max}}.",
             "minbytes": "This field should be more than {{min}} bytes.",
-            "maxbytes": "This field cannot be more than {{max}} bytes.",
+            "maxbytes": "Este campo deve ser no máximo {{max}} bytes.",
             "pattern": "Dette felt skal følge mønsteret {{pattern}}.",
             "number": "Dette felt skal være et nummer.",
             "datetimelocal": "Dette felt skal være dato og tid."

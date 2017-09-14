@@ -144,31 +144,31 @@ const ngValidators = './ng_validators';
                 <%_ if (fields[idx].fieldValidateRules.indexOf('min') !== -1) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.min" data-translate="entity.validation.min" translate-value-min="<%= fields[idx].fieldValidateRulesMin %>">
-                    This field should be at least <%= fields[idx].fieldValidateRulesMin %>.
+                    Este campo deve ser no mínimo <%= fields[idx].fieldValidateRulesMin %>.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('max') !== -1) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.max" data-translate="entity.validation.max" translate-value-max="<%= fields[idx].fieldValidateRulesMax %>">
-                    This field cannot be more than <%= fields[idx].fieldValidateRulesMax %>.
+                    Este campo deve ser no máximo <%= fields[idx].fieldValidateRulesMax %>.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('minbytes') !== -1) { _%>
                 <p class="help-block"
                    ng-show="editForm.<%= fieldName %>.$error.minbytes" data-translate="entity.validation.minbytes" translate-value-min="<%= fields[idx].fieldValidateRulesMinbytes %>">
-                    This field should be at least <%= fields[idx].fieldValidateRulesMinbytes %>.
+                    Este campo deve ser no mínimo <%= fields[idx].fieldValidateRulesMinbytes %>.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('maxbytes') !== -1) { _%>
                 <p class="help-block"
                    ng-show="editForm.<%= fieldName %>.$error.maxbytes" data-translate="entity.validation.maxbytes" translate-value-max="<%= fields[idx].fieldValidateRulesMaxbytes %>">
-                    This field cannot be more than <%= fields[idx].fieldValidateRulesMaxbytes %>.
+                    Este campo deve ser no máximo <%= fields[idx].fieldValidateRulesMaxbytes %>.
                 </p>
                 <%_ } _%>
                 <%_ if (fields[idx].fieldValidateRules.indexOf('pattern') !== -1) { _%>
                 <p class="help-block"
                     ng-show="editForm.<%= fieldName %>.$error.pattern" data-translate="entity.validation.pattern" translate-value-pattern="<%= fieldNameHumanized %>">
-                    This field should follow pattern for "<%= fieldNameHumanized %>".
+                    Este campo deve seguir o padrão "<%= fieldNameHumanized %>".
                 </p>
                 <%_ } _%>
                 <%_ if (fieldType === 'Integer' || fieldType === 'Long' || fieldType === 'Float' || fieldType === 'Double' || fieldType === 'BigDecimal') { _%>
